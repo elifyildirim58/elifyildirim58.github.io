@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YemekTarifleri</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<style>
+    *{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding:0;
+    background-color: #dbdbdb;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#social{
+    background-color:#330136;
+    color:#C1BBA8;
+    height:55px;
+    width:100%;
+    position:sticky;
+    top:0;
+    z-index: 18px;
+    text-align: center;
+    padding: 15px;
+    letter-spacing: 4px;
+
+}
+#social:hover{
+
+    opacity: 0,8;
+}
+#container{
+    width: 80%;
+    margin: auto;
+    height: auto;
+}
+section{
+    width: 100%;
+    height: auto;
+    background-color: #f1f1f1;
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px;
+    margin-top: 15px;
+    overflow:auto;
+}
+nav{
+    width: 20%;
+    float: left;
+    margin-top: 10px;
+    height: auto;
+}
+nav ul{
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+nav li{
+    list-style-type: none;
+}
+nav li a{
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    color:black;
+    border-bottom:1px solid #b4b4b4 ;
+    padding-left: 20px;
+    display: block;
+
+}
+nav li a:hover{
+    color: white;
+    background-color: #CCB2B3;
+
+}
+i{
+    margin-right: 10px;
+}
+main{
+    float: center;
+
+    width: 75%;
+    padding: 10px;
+
+}
+.icerik{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 10px;
+
+}
+.rsm{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+h5
+{
+    margin: 10px;
+    color:dimgray;
+}
+</style>
+
+
+<body>
+    <div id="social">YEMEK TARİFLERİ        
+    <i class="fas fa-search"></i>
+    <i class=" fab fa-twitter"></i>
+    <i class=" fab fa-instagram"></i>
+</div>
+    <div id="container">
+        <head>
+            </head>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i>Anasayfa</a></li>
+                    <li><a href="hakkimizda.html" onclick="goToSection('icerik')"><i class="fas fa-users"></i>Hakkımızda</a></li>
+                    <li><a href="tarifler.html"><i class="fas fa-images"></i>Tarifler</a></li>
+                    <li><a href="iletisim.html"><i class="fas fa-address-book"></i>iletişim</a></li>
+                </ul>
+            </nav>
+            <main>
+                <!-- İlgili sayfa içeriğini buraya ekleyin -->
+<div id="icerik" class="icerik">
+    <h2>Anasayfa</h2>
+    <p>Hoş geldiniz! Yemek tariflerine dair en güncel bilgileri bulabileceğiniz bir platform.</p>
+
+    <!-- Kayıt Formu -->
+    <h3>Kayıt Ol</h3>
+    <form action="kayit_islemi.php" method="post">
+        <label for="ad">Adınız:</label>
+        <input type="text" id="ad" name="ad" required>
+
+        <label for="soyad">Soyadınız:</label>
+        <input type="text" id="soyad" name="soyad" required>
+
+        <label for="email">E-posta Adresiniz:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="sifre">Şifreniz:</label>
+        <input type="password" id="sifre" name="sifre" required>
+
+        <input type="submit" value="Kayıt Ol">
+    </form>
+</div>
+<!-- İlgili sayfa içeriğini buraya ekleyin -->
+
+                </div>
+                
+                <h5></h5>
+
+            </div>
+            </main>
+        </section>
+        <footer>Tüm Haklar Saklıdır.</footer>
+
+    </div>
+    
+</body>
+
+</html>
